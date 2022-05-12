@@ -21,7 +21,7 @@ public class bateu : MonoBehaviour
 
         print(collision.body.GetComponent<Rigidbody>().velocity);
 
-        Vector3 m_NewForce = new Vector3(0.0f, 0.0f, 1000.0f);
+        Vector3 m_NewForce = new Vector3(0.0f, 0.0f, 10.0f);
         GetComponent<Rigidbody>().AddForce(m_NewForce, ForceMode.Acceleration);
 
         if (collision.relativeVelocity.magnitude > 2) {
