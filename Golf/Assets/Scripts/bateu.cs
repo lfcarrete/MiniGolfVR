@@ -11,21 +11,21 @@ public class bateu : MonoBehaviour
         //audioSource = GetComponent<AudioSource>();
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
+    // void OnCollisionEnter(Collision collision)
+    // {
 
-        foreach (ContactPoint contact in collision.contacts)
-        {
-            Debug.DrawRay(contact.point, contact.normal, Color.white);
-        }
+    //     foreach (ContactPoint contact in collision.contacts)
+    //     {
+    //         Debug.DrawRay(contact.point, contact.normal, Color.white);
+    //     }
 
-        print(collision.body.GetComponent<Rigidbody>().velocity);
+    //     print(collision.body.GetComponent<Rigidbody>().velocity);
 
-        Vector3 m_NewForce = new Vector3(0.0f, 0.0f, 10.0f);
-        GetComponent<Rigidbody>().AddForce(m_NewForce, ForceMode.Acceleration);
+    //     Vector3 m_NewForce = new Vector3(0.0f, 0.0f, 10.0f);
+    //     GetComponent<Rigidbody>().AddForce(m_NewForce, ForceMode.Acceleration);
 
-        if (collision.relativeVelocity.magnitude > 2) {
-            //audioSource.Play();
-         }
-    }
+    //     if (collision.relativeVelocity.magnitude > 2) {
+    //         //audioSource.Play();
+    //      }
+    // }
 }
