@@ -32,7 +32,6 @@ public class Club : MonoBehaviour
 
             other.GetComponent<Rigidbody>().velocity =  velocidade;
 
-            print(velocidade);
             Debug.DrawRay(transform.position, transform.position+velocidade, Color.red);
 
         }
