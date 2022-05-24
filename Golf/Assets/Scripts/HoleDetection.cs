@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HoleDetection : MonoBehaviour
 {
+    public Scene scene;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,9 @@ public class HoleDetection : MonoBehaviour
         if(GameObject.FindWithTag("Ball")){
             print("entrei");
             Destroy(GameObject.FindWithTag("Ball"));
+
+            DontDestroyOnLoad(GameObject.FindWithTag("Club"));            
+            SceneManager.LoadScene("MoonLevel");
             // ganhou
         }
     }

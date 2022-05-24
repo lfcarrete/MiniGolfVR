@@ -6,7 +6,7 @@ public class Club : MonoBehaviour
 {
 
     public Transform aimTarget; // the target where we aim to land the ball
-    float speed = 5.0f; // move speed
+    float speed = 7.0f; // move speed
     //float force = 13; // ball impact force
     Vector3 aimTargetInitialPosition; // initial position of the aiming gameObject which is the center of the opposite court
 
@@ -29,9 +29,9 @@ public class Club : MonoBehaviour
             //add force to the ball plus some upward force according to the shot being played
             
             Vector3 velocidade = dir.normalized * speed;
-
+         
             other.GetComponent<Rigidbody>().velocity =  velocidade;
-
+          
             Debug.DrawRay(transform.position, transform.position+velocidade, Color.red);
 
         }
