@@ -25,7 +25,7 @@ public class HoleDetection : MonoBehaviour
             Destroy(GameObject.FindWithTag("Ball"));
 
             DontDestroyOnLoad(GameObject.FindWithTag("Club"));            
-            SceneManager.LoadScene("MoonLevel");
+            SceneManager.LoadScene("Menu");
             // ganhou
         }
     }

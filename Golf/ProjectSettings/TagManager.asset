@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Ball
   - Club
+  - Score
+  - FlagHexa
+  - FlagCandy
+  - FlagMoon
   layers:
   - Default
   - TransparentFX

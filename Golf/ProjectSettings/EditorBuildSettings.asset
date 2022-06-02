@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HexaLevel.unity
     guid: 1d0b7d5d32d4aac44ae2fd1a50288f48
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 4c96351dc3141e746b6f8e5d115cbcd6
   m_configObjects:
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 4f78bfb31d83ca64e9114b17fa7cc92c, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e1a1be94f07855f478d7465a3ef729f8, type: 2}
